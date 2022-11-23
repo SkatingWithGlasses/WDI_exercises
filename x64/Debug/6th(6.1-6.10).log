@@ -1,3 +1,0 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: Katalog pośredni (x64\Debug\) zawiera pliki udostępnione z innego projektu (6th(6.1-6.10).vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
-  main.c
-  6th(6.1-6.10).vcxproj -> C:\Users\macie\source\repos\WDI_exercises\6th(6.1-6.10)\x64\Debug\6th(6.2-6.10).exe
