@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 //6.2 av with while and do while 
+//double compilation for removing warnings
 
 int get_n() {
 	int n, logic = 0;
@@ -14,13 +15,38 @@ int get_n() {
 
 }
 
-void avrange_while(int n) {
-	
-	for (int i = 0; i < n; i++) {
-		printf("\nPodaj liczbe %d z %d", i + 1, n);
-		
-	 }
+void avrange_while( int n) {
+	 
+	float* arr;
+	arr = calloc(n, sizeof(float));
+	float sum=0;
 
+	int i = 0;
+	while (i<n){
+		printf("\nPodaj liczbe %d z %d  ", i + 1, n);
+		scanf_s("%f", &arr[i]);
+		sum += arr[i];
+		i++;
+	 }
+	printf("Avrange: %.2f", sum / n);
+	free(arr);
+}
+
+void avrange_dowhile(int n) {
+
+	float* arr;
+	arr = calloc(n, sizeof(float));
+	float sum = 0;
+
+	int i = 0;
+	do  {
+		printf("\nPodaj liczbe %d z %d  ", i + 1, n);
+		scanf_s("%f", &arr[i]);
+		sum += arr[i];
+		i++;
+	} while (i < n);
+	printf("Avrange: %.2f", sum / n);
+	free(arr);
 }
 
 
