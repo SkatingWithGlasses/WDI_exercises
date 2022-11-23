@@ -19,6 +19,7 @@ void avrange_while(int n) {
 	for (int i = 0; i < n; i++) {
 		printf("\nPodaj liczbe %d z %d", i + 1, n);
 		
+		
 	 }
 
 }
@@ -27,7 +28,7 @@ void avrange_while(int n) {
 int main() {
 
 
-	printf("Podaj ilosc liczb, z ktorych policzysz srednia:  ");//asking user for count of numbers to calc
+	printf("Podaj ilosc liczb, z ktorych policzysz srednia:  ");//asking user for amount of numbers to calc
 
 	int n = get_n();
 
